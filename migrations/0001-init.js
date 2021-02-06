@@ -18,7 +18,7 @@ module.exports.up = knex => Promise.all([
         table.integer('context').unsigned().references('context.id');
         table.float('value').notNullable();
         table.float('trust').nullable();
-        table.jsonb('proof');
+        table.string('proof'); 
         table.timestamps(false, true);
       });
     }
