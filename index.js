@@ -11,8 +11,8 @@ const middleware = require('./lib/middleware');
 const ScoreServer = require('./lib/Server').Server;
 
 
-// const dbConfig = require('./knexfile').development;
-const dbConfig = require('./server/dbconf.json');
+const dbConfig = require('./knexfile').production;
+// const dbConfig = require('./server/dbconf.json');
 const db = require('knex')(dbConfig);
 
 
