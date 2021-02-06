@@ -26,18 +26,19 @@ module.exports = {
   },
 
   production: {
-    client: 'postgresql',
-    connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
+    client: 'mysql',
+	connection: {
+		host: "127.0.0.1",
+        user: "bnardus",
+        password: "Broke978#",
+        database: "high_scores"
     },
     pool: {
-      min: 2,
-      max: 10
+        min: 2,
+        max: 10
     },
     migrations: {
-      tableName: 'knex_migrations'
+        tableName: "knex_migrations"
     }
   }
 
