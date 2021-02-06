@@ -6,9 +6,9 @@ const HOST = process.env.HOST || 'localhost';
 
 const express = require('express');
 
-const validators = require('../lib/validators');
-const middleware = require('../lib/middleware');
-const ScoreServer = require('../lib/Server').Server;
+const validators = require('./lib/validators');
+const middleware = require('./lib/middleware');
+const ScoreServer = require('./lib/Server').Server;
 
 
 // const dbConfig = require('./knexfile').development;
