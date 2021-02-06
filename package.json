@@ -5,7 +5,8 @@
   "main": "server/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"start": "node index.js"
+	"start": "node index.js",
+	"start-prod":"HOST=0.0.0.0 node index.js"
   },
   "author": {
     "name": "coxm",
