@@ -5,6 +5,7 @@ const HOST = process.env.HOST || 'localhost';
 
 
 const express = require('express');
+const cors = require('cors');
 
 const validators = require('./lib/validators');
 const middleware = require('./lib/middleware');
@@ -65,6 +66,7 @@ const app = express();
 app.use(express.json());
 app.use(middleware.logRequest);
 app.use(middleware.handleErrors);
+app.use(cors());
 
 
 app.get('/scores', (req, res) => scores.retrieve(req, res));
